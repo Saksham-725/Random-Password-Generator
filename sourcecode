@@ -42,8 +42,12 @@ int main(){
 	printf("Enter Length of Password(8-32) - ");
 	scanf("%d",&N);
 	if(N<8 || N>32){
-        printf("Error In Length !!!!!!!!!");
+        printf("\n\nError In Length !!!!!!!!!\n\n");
 	}
-	randomPasswordGeneration(N);
-	return 0;
+	else{
+            printf("\n*******************************************************\n\n\n\t");
+            randomPasswordGeneration(N);
+            printf("\n\n\n*******************************************************\n\n");
+	}
+    return 0;
 }
